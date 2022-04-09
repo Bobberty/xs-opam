@@ -21,6 +21,8 @@ build: [
 post-messages: [
   "This package requires libpci-dev (>= 3.2.0) to be installed on your system"
     {failure & os = "debian"}
+  "This package requires pciutils-dev (>= 3.2.0) to be installed on your system"
+    {failure & os = "alpine"}
   "This package requires libpci-dev (>= 3.2.0) to be installed on your system"
     {failure & os = "ubuntu"}
   "This package requires pciutils-devel (>= 3.2.0) to be installed on your system"
@@ -28,7 +30,7 @@ post-messages: [
 ]
 depexts: [
   ["hwdata" "libpci-dev"] {os-family = "debian"}
-  ["hwdata" "pciutils-dev"] {os-distribution = "alpine"}
+  ["hwids" "pciutils-dev"] {os-distribution = "alpine"}
   ["hwdata" "pciutils-devel"] {os-distribution = "centos"}
   ["hwdata" "pciutils-devel"] {os-distribution = "fedora"}
 
