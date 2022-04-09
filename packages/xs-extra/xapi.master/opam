@@ -71,6 +71,8 @@ depexts: [
   ["hwdata" "libxxhash-dev" "libxxhash0"] {os-distribution = "ubuntu"}
   ["hwdata" "xxhash-devel" "xxhash-libs"] {os-distribution = "centos"}
   ["hwdata" "xxhash-devel" "xxhash-libs"] {os-distribution = "fedora"}
+  ["hwids" "xxhash-devel" "xxhash-libs"] {os-distribution = "alpine"}
+
 ]
 synopsis: "The xapi toolstack daemon which implements the XenAPI"
 description: """
